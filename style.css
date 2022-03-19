@@ -22,6 +22,7 @@ button {
 }
 .card {
     margin: auto;
+    margin-top: 0;
     width: 12%;
     padding: 10px;
     margin-bottom: 10px;
@@ -33,15 +34,40 @@ button {
     padding: 0 4px;
 }
   
-/* Create four equal columns that sits next to each other */
+/* Create 8 equal columns that sits next to each other */
 .column {
-    flex: 10%;
+    flex: 12.5%;
     max-width: 12.5%;
-    padding: 0px 5px 0 5px;
+    padding: 0px 2px 0 2px;
 }
 
 .column img {
     margin-top: 8px;
     vertical-align: middle;
     width: 100%;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .grid {
+        width: 95%;
+    }
+    .row {
+        flex-wrap: nowrap;
+        display: inline-block;
+    }
+    .column {
+        flex: 33%;
+        max-width: 25%;
+        float: right;
+    }
+    .column img {
+        width: 110%;
+    }
+    .box {
+        width: 95%;
+    }
+    .card {
+        width: 30%;
+    }
 }
