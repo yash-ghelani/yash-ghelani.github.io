@@ -1,3 +1,7 @@
+$(document).ready(function(){
+    $("#myModal").modal('show');
+});
+
 function flipImage(image) {
     var id = image.id
     var Image_Id = document.getElementById(id);
