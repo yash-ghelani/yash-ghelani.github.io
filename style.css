@@ -1,7 +1,9 @@
 h1 {
     text-align: center;
 }
-
+button {
+    margin-bottom: 10px;
+}
 .grid {
     margin: auto;
     width: 60%;
@@ -10,20 +12,24 @@ h1 {
 }
 .box {
     margin: auto;
+    margin-bottom: 30px;
     width: 60%;
     background-color: #191970;
+    text-align:center;
+    padding: 20px;
 }
 .card {
     margin: auto;
-    width: 10%;
+    width: 12%;
     padding: 10px;
+    margin-bottom: 10px;
 }
 .row {
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
     padding: 0 4px;
-  }
+}
   
 /* Create four equal columns that sits next to each other */
 .column {
