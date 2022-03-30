@@ -1,6 +1,6 @@
-$(document).ready(function(){
-    $("#myModal").modal('show');
-});
+// $(document).ready(function(){
+//     $("#myModal").modal('show');
+// });
 
 function flipImage(image) {
     var id = image.id
