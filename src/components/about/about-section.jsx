@@ -16,7 +16,7 @@ const AboutSection = () => {
 			<h2 className='font-semibold tracking-widest text-5xl opacity-55'>
 				about me
 			</h2>
-			<div className='flex xl:flex-row flex-col  gap-[50px] xl:gap-[100px] justify-center'>
+			<div className='flex xl:flex-row flex-col  gap-[75px] xl:gap-[100px] justify-center'>
 				<div className='text-xl font-extralight flex flex-col gap-10 max-w-[500px]'>
 					<p>
 						Hey! I’m Yash, a Software Engineer based in London. I’ve
