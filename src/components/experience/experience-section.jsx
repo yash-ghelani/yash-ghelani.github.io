@@ -94,7 +94,7 @@ const ExperienceSection = () => {
 	const [activeEducation, setActiveEducation] = useState(0);
 
 	return (
-		<section className='min-h-svh m-auto max-w-[1280px] p-10 flex flex-col xl:flex-row items-center justify-between xl:gap-[100px] z-10'>
+		<section className='min-h-svh m-auto max-w-[1280px] p-10 flex flex-col xl:flex-row items-center justify-between xl:gap-[100px] gap-64 z-10'>
 			<div className='flex flex-col w-[600px] gap-8'>
 				<h2 className='font-semibold tracking-widest text-5xl opacity-55'>
 					experience

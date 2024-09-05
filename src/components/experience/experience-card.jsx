@@ -24,8 +24,8 @@ const ExperienceCard = ({
 			/>
 			<div
 				onClick={() => setActiveExperience(index)}
-				className={`flex flex-col bg-white/5 rounded-2xl border border-white/10 shadow-md w-[500px] p-10 gap-10 overflow-hidden cursor-pointer transition-height duration-300 ease-in-out ${
-					activeExperience === index ? 'h-[450px]' : 'h-[150px]'
+				className={`flex flex-col bg-white/5 rounded-2xl backdrop-blur-3xl border border-white/10 shadow-md w-[500px] p-6 gap-10 overflow-hidden cursor-pointer transition-height duration-300 ease-in-out ${
+					activeExperience === index ? 'h-[400px]' : 'h-[125px]'
 				}`}
 			>
 				<div className='flex flex-row justify-between items-center'>
