@@ -94,42 +94,44 @@ const ExperienceSection = () => {
 	const [activeEducation, setActiveEducation] = useState(0);
 
 	return (
-		<section className='min-h-svh m-auto max-w-[1280px] p-10 flex flex-col xl:flex-row items-center justify-between xl:gap-[100px] gap-64 z-10'>
-			<div className='flex flex-col w-[600px] gap-8'>
-				<h2 className='font-semibold tracking-widest text-5xl opacity-55'>
-					experience
-				</h2>
-				<div className='flex flex-row'>
-					<div className='w-[6px] bg-black/25 translate-x-1/2' />
-					<div className='flex flex-col gap-6'>
-						{experience.roles.map((exp, index) => (
-							<ExperienceCard
-								activeExperience={activeExperience}
-								setActiveExperience={setActiveExperience}
-								index={index}
-								key={exp.companyName}
-								{...exp}
-							/>
-						))}
+		<section className='min-h-svh xl:max-w-[1280px] max-w-[600px] w-[80vw] m-auto flex flex-col justify-center'>
+			<div className='flex xl:flex-row flex-col gap-[5vh] m-auto w-full justify-between border'>
+				<div className='flex flex-col max-w-[600px] gap-8'>
+					<h2 className='font-semibold tracking-widest text-5xl opacity-55'>
+						experience
+					</h2>
+					<div className='flex flex-row'>
+						<div className='w-[6px] bg-black/25 translate-x-1/2' />
+						<div className='flex flex-col gap-6'>
+							{experience.roles.map((exp, index) => (
+								<ExperienceCard
+									activeExperience={activeExperience}
+									setActiveExperience={setActiveExperience}
+									index={index}
+									key={exp.companyName}
+									{...exp}
+								/>
+							))}
+						</div>
 					</div>
 				</div>
-			</div>
-			<div className='flex flex-col w-[600px] gap-8'>
-				<h2 className='font-semibold tracking-widest text-5xl opacity-55'>
-					education
-				</h2>
-				<div className='flex flex-row'>
-					<div className='w-[6px] bg-black/25 translate-x-1/2' />
-					<div className='flex flex-col gap-6'>
-						{education.roles.map((edu, index) => (
-							<EducationCard
-								activeEducation={activeEducation}
-								setActiveEducation={setActiveEducation}
-								index={index}
-								key={edu.institutionName}
-								{...edu}
-							/>
-						))}
+				<div className='flex flex-col max-w-[600px] gap-8'>
+					<h2 className='font-semibold tracking-widest text-5xl opacity-55'>
+						education
+					</h2>
+					<div className='flex flex-row'>
+						<div className='w-[6px] bg-black/25 translate-x-1/2' />
+						<div className='flex flex-col gap-6'>
+							{education.roles.map((edu, index) => (
+								<EducationCard
+									activeEducation={activeEducation}
+									setActiveEducation={setActiveEducation}
+									index={index}
+									key={edu.institutionName}
+									{...edu}
+								/>
+							))}
+						</div>
 					</div>
 				</div>
 			</div>
