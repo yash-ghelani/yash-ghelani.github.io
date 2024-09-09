@@ -8,18 +8,19 @@ import IconRow from './icon-row';
 
 const HeroSection = () => {
 	return (
-		<section className='flex flex-col min-h-svh'>
-			<div className='flex flex-col justify-center items-center gap-14 m-auto'>
+		<section className='flex flex-col min-h-svh w-[70vw] m-auto'>
+			<div className='flex flex-col justify-center items-center gap-[5vh] m-auto'>
 				<Image
 					src={'/images/memoji-edit.png'}
+					className='m-auto max-w-[200px] w-[50%]'
 					width={200}
 					height={500}
 					alt='memoji'
-					className='m-auto'
+					layout
 				/>
 
 				<h1
-					className={`${outift.className} antialiased text-8xl font-bold text-center`}
+					className={`${outift.className} antialiased sm:text-8xl text-6xl font-bold text-center`}
 					style={{
 						color: '#ffffff',
 						textShadow: `
@@ -50,8 +51,8 @@ const HeroSection = () => {
 					]}
 					wrapper='span'
 					speed={50}
-					className={`${fira.className} m-auto text-white`}
-					style={{ fontSize: '2em', display: 'inline-block' }}
+					className={`${fira.className} m-auto text-white sm:text-4xl text-xl text-center`}
+					style={{ display: 'inline-block' }}
 					repeat={Infinity}
 				/>
 

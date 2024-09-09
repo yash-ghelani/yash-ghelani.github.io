@@ -34,7 +34,7 @@ const IconRow = () => {
 					width={50}
 					height={50}
 					key={icon.src}
-					className={`h-[50px] w-auto transition-all duration-200 ease-in-out transform ${
+					className={`max-h-[50px] h-[7.5vw] w-auto transition-all duration-200 ease-in-out transform ${
 						index === currentIcon
 							? 'grayscale-0 translate-y-[-5px]'
 							: 'grayscale'
