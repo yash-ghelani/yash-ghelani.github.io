@@ -28,8 +28,8 @@ const Aura = ({ color = COLORS.Pink, position = POSITIONS.TopLeft }) => {
 			const { innerWidth, innerHeight } = window;
 
 			// Mouse-based movement offset
-			const mouseX = (e.clientX / innerWidth) * 250 - 125; // Centering at 0
-			const mouseY = (e.clientY / innerHeight) * 250 - 125; // Centering at 0
+			const mouseX = (e.clientX / innerWidth) * 500 - 250; // Centering at 0
+			const mouseY = (e.clientY / innerHeight) * 500 - 250; // Centering at 0
 
 			// Set mouse movement offset
 			setOffset({
@@ -49,7 +49,7 @@ const Aura = ({ color = COLORS.Pink, position = POSITIONS.TopLeft }) => {
 
 	return (
 		<div
-			className={`absolute ${position} w-[60vw] h-[60vw] ${color} opacity-60 rounded-full filter blur-[300px] z-[-1]`}
+			className={`absolute ${position} md:w-[100vh] md:h-[100vh] w-[75vh] h-[75vh] ${color} opacity-60 rounded-full filter blur-[300px] z-[-1]`}
 			style={{
 				transform: `translate(${offset.x}px, ${offset.y}px)`,
 				transition: 'transform 0.65s ease-out', // Smooth movement for mouse following
