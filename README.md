@@ -25,22 +25,22 @@ Welcome to my portfolio website! This site is a showcase of my projects, experie
 If you'd like to run this project locally, follow these steps:
 
 1. Clone the repository:
-   ```
-   git clone https://github.com/your-username/your-repo-name.git
-   ```
+```
+git clone https://github.com/yash-ghelani.github.io.git
+```
 2. Install the dependencies:
-  ```
-  npm install
-  ```
+```
+npm install
+```
 3. Run the development server:
-  ```
-  npm run dev
-  ```
+```
+npm run dev
+```
 4. Open http://localhost:3000 in your browser to view the site.
 
 ## 🚢 Deployment
 This portfolio is deployed via GitHub Pages. You can visit the live version at:
 
-https://your-username.github.io/your-repo-name
+https://yash-ghelani.github.io/
 
 Thank you for visiting my portfolio! Feel free to check out my projects, and don't hesitate to reach out if you'd like to collaborate!
