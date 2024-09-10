@@ -2,7 +2,7 @@
 
 Welcome to my portfolio website! This site is a showcase of my projects, experience, and skills as a front-end/full-stack developer.
 
-![Homepage Screenshot](<img width="1787" alt="image" src="https://github.com/user-attachments/assets/e553fb46-283c-410b-9163-2b4d36fe7459">)
+<img width="1787" alt="image" src="https://github.com/user-attachments/assets/30dcd131-8156-4015-88ab-77185cf030e8">
 
 > This site is built with **Next.js** and styled using **Tailwind CSS**. It's optimized for performance and designed to be responsive across all devices.
 
