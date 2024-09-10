@@ -1,24 +1,26 @@
 {
-  "name": "yash-ghelani.github.io",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "next": "14.2.5",
-    "react": "^18",
-    "react-dom": "^18",
-    "react-type-animation": "^3.2.0",
-    "swiper": "^11.1.9"
-  },
-  "devDependencies": {
-    "eslint": "^8",
-    "eslint-config-next": "14.2.5",
-    "postcss": "^8",
-    "tailwindcss": "^3.4.1"
-  }
+	"name": "yash-ghelani.github.io",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint",
+		"deploy": "npm run build && gh-pages -d out"
+	},
+	"dependencies": {
+		"next": "14.2.5",
+		"react": "^18",
+		"react-dom": "^18",
+		"react-type-animation": "^3.2.0",
+		"swiper": "^11.1.9"
+	},
+	"devDependencies": {
+		"eslint": "^8",
+		"eslint-config-next": "14.2.5",
+		"gh-pages": "^6.1.1",
+		"postcss": "^8",
+		"tailwindcss": "^3.4.1"
+	}
 }
