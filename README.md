@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# My Portfolio Website
 
-## Getting Started
+Welcome to my portfolio website! This site is a showcase of my projects, experience, and skills as a front-end/full-stack developer.
 
-First, run the development server:
+![Homepage Screenshot](<img width="1787" alt="image" src="https://github.com/user-attachments/assets/e553fb46-283c-410b-9163-2b4d36fe7459">)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+> This site is built with **Next.js** and styled using **Tailwind CSS**. It's optimized for performance and designed to be responsive across all devices.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Technologies Used
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- **Next.js**: A powerful React framework for building fast and scalable applications.
+- **React**: Component-based UI library.
+- **Tailwind CSS**: A utility-first CSS framework for rapid UI development.
+- **GitHub Pages**: Deployed as a static site via GitHub Pages.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## ✨ Features
 
-## Learn More
+- **Single Page Application (SPA)**: Smooth navigation and seamless user experience.
+- **Fully Responsive Design**: Looks great on desktop, tablet, and mobile devices.
+- **Optimized for Performance**: Static generation using Next.js ensures fast loading times.
+- **Modern Design**: A clean and minimalistic design inspired by professional portfolios.
 
-To learn more about Next.js, take a look at the following resources:
+## 🖥️ How to Run Locally
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+If you'd like to run this project locally, follow these steps:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+1. Clone the repository:
+   ```
+   git clone https://github.com/your-username/your-repo-name.git
+   ```
+2. Install the dependencies:
+  ```
+  npm install
+  ```
+3. Run the development server:
+  ```
+  npm run dev
+  ```
+4. Open http://localhost:3000 in your browser to view the site.
 
-## Deploy on Vercel
+## 🚢 Deployment
+This portfolio is deployed via GitHub Pages. You can visit the live version at:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+https://your-username.github.io/your-repo-name
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Thank you for visiting my portfolio! Feel free to check out my projects, and don't hesitate to reach out if you'd like to collaborate!
