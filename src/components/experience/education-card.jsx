@@ -38,7 +38,7 @@ const EducationCard = ({
 					</div>
 					<Image
 						src={institutionLogo}
-						alt=''
+						alt={institutionName + ' logo'}
 						width={50}
 						height={50}
 						className='h-[70px] w-auto'

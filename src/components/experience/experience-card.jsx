@@ -40,7 +40,7 @@ const ExperienceCard = ({
 					</div>
 					<Image
 						src={companyLogo}
-						alt=''
+						alt={companyName + ''}
 						width={50}
 						height={50}
 						className='h-[70px] w-auto'
