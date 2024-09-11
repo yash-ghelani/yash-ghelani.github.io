@@ -49,7 +49,7 @@ const Aura = ({ color = COLORS.Pink, position = POSITIONS.TopLeft }) => {
 
 	return (
 		<div
-			className={`absolute ${position} md:w-[100vh] md:h-[100vh] w-[75vh] h-[75vh] ${color} opacity-60 rounded-full filter blur-[300px] z-[-1]`}
+			className={`absolute ${position} md:w-[100vh] md:h-[100vh] w-[75vh] h-[75vh] ${color} opacity-75 rounded-full filter blur-[300px] z-[-1]`}
 			style={{
 				transform: `translate(${offset.x}px, ${offset.y}px)`,
 				transition: 'transform 0.65s ease-out', // Smooth movement for mouse following

@@ -13,10 +13,10 @@ module.exports = {
 					'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
 			},
 			fontSize: { //TODO: make note of clamps in notion
-				'clamp-base': 'clamp(1rem, 1.5vw, 1.125rem)', // Example of clamp for base font size
-				'clamp-xl': 'clamp(2rem, 5vw, 3rem)', // Example of clamp for title font size
-				'clamp-lg': 'clamp(1.5rem, 3vw, 2.5rem)', // Example of clamp for larger font size
-				'clamp-sm': 'clamp(0.875rem, 1.5vw, 1.125rem)', // Example of clamp for smaller font size
+				'clamp-base': 'clamp(1rem, 1.25vw, 1.2rem)', // base responsive font size
+				'clamp-xl': 'clamp(2rem, 7vw, 3rem)', // title responsive font size
+				'clamp-lg': 'clamp(1.5rem, 3vw, 2.5rem)', // larger font size
+				'clamp-sm': 'clamp(0.8rem, 2.75vw, 1.25rem)', // smaller font size
 			},
 		},
 	},

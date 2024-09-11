@@ -12,7 +12,7 @@ import SkillsSection from '@/components/skills/skills-section';
 export default function Home() {
 	return (
 		<main className='flex flex-col overflow-hidden'>
-			<section className='relative border'>
+			<section className='relative'>
 				<Aura color={COLORS.Pink} position={POSITIONS.BottomLeft} />
 				<Aura color={COLORS.Cyan} position={POSITIONS.TopRight} />
 				<HeroSection />
@@ -22,7 +22,7 @@ export default function Home() {
 				<Aura color={COLORS.Blue} position={POSITIONS.TopRight} />
 				<AboutSection />
 			</section>
-			<section className='relative border'>
+			<section className='relative'>
 				<Aura color={COLORS.Red} position={POSITIONS.BottomLeft} />
 				<Aura color={COLORS.Purple} position={POSITIONS.TopRight} />
 				<ExperienceSection />
