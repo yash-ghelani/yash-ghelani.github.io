@@ -1,7 +1,5 @@
-'use client';
-
+import React from 'react';
 import Image from 'next/image';
-import React, { useState } from 'react';
 
 const ExperienceCard = ({
 	activeExperience,
@@ -18,14 +16,14 @@ const ExperienceCard = ({
 	return (
 		<div className='flex flex-row items-center'>
 			<div
-				className={`w-6 h-6 rounded-full -translate-x-1/2 transition-colors duration-500 ease ${
+				className={`max-w-6 max-h-6 w-[4vw] h-[4vw] rounded-full -translate-x-1/2 transition-colors duration-500 ease ${
 					activeExperience === index ? 'bg-white' : 'bg-white/25'
 				}`}
 			/>
 			<div
 				onClick={() => setActiveExperience(index)}
-				className={`flex flex-col bg-white/5 rounded-2xl backdrop-blur-3xl border border-white/10 shadow-md w-[500px] p-6 gap-10 overflow-hidden cursor-pointer transition-height duration-300 ease-in-out ${
-					activeExperience === index ? 'h-[400px]' : 'h-[125px]'
+				className={`flex flex-col w-full text-clamp-xs bg-white/5 rounded-2xl backdrop-blur-3xl border border-white/10 shadow-md p-[1.75em] gap-[2em] overflow-hidden cursor-pointer transition-height duration-300 ease ${
+					activeExperience === index ? 'h-[25em]' : 'h-[8em]'
 				}`}
 			>
 				<div className='flex flex-row justify-between items-center'>
@@ -40,10 +38,10 @@ const ExperienceCard = ({
 					</div>
 					<Image
 						src={companyLogo}
-						alt={companyName + ''}
+						alt={companyName + ' logo'}
 						width={50}
 						height={50}
-						className='h-[70px] w-auto'
+						className='min-w-[30px] w-[15%] max-w-[70px]'
 					/>
 				</div>
 				<div>

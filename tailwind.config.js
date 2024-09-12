@@ -17,6 +17,7 @@ module.exports = {
 				'clamp-xl': 'clamp(2rem, 7vw, 3rem)', // title responsive font size
 				'clamp-lg': 'clamp(1.5rem, 3vw, 2.5rem)', // larger font size
 				'clamp-sm': 'clamp(0.8rem, 2.75vw, 1.25rem)', // smaller font size
+				'clamp-xs': 'clamp(0.4rem, 2.4vw, 0.9rem)', // smallest font size
 			},
 		},
 	},
