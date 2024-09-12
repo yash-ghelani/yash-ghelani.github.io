@@ -50,7 +50,7 @@ const EducationCard = ({
 					</h2>
 					<div className='flex flex-col justify-between'>
 						{subjectList.map((subject, index) => (
-							<p key={index} className='font-thin py-[1em]'>
+							<p key={index} className='font-thin py-[0.8em]'>
 								- {subject}
 							</p>
 						))}

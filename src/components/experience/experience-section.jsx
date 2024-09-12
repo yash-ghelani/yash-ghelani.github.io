@@ -96,7 +96,7 @@ const ExperienceSection = () => {
 	return (
 		<section className='min-h-svh xl:max-w-[1280px] max-w-[600px] w-[80vw] m-auto flex flex-col justify-center'>
 			<div className='flex xl:flex-row flex-col xl:gap-10 m-auto w-full justify-between'>
-				<div className='flex flex-col min-h-svh max-w-[500px] w-full justify-center gap-10'>
+				<div className='flex flex-col min-h-svh max-w-[600px] xl:w-[42.5%] w-full justify-center gap-10'>
 					<h2 className='font-semibold tracking-widest text-clamp-xl opacity-55'>
 						education
 					</h2>
@@ -115,7 +115,7 @@ const ExperienceSection = () => {
 						</div>
 					</div>
 				</div>
-				<div className='flex flex-col min-h-svh max-w-[500px] w-full justify-center gap-8'>
+				<div className='flex flex-col min-h-svh max-w-[600px] xl:w-[42.5%] w-full justify-center gap-8'>
 					<h2 className='font-semibold tracking-widest text-clamp-xl opacity-55'>
 						experience
 					</h2>
