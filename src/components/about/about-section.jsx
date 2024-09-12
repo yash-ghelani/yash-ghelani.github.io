@@ -19,7 +19,7 @@ const AboutSection = () => {
 					about me
 				</h2>
 				<div className='flex xl:flex-row flex-col xl:justify-between gap-10'>
-					<div className='xl:text-clamp-base text-clamp-sm font-extralight flex flex-col gap-[2em] max-w-[600px] max-h-[500px] xl:w-[40%] w-full'>
+					<div className='xl:text-clamp-base text-clamp-sm font-thin flex flex-col gap-[2em] max-w-[600px] max-h-[500px] xl:w-[40%] w-full'>
 						<p>
 							Hey! I’m Yash, a Software Engineer based in London.
 							I’ve had the opportunity to work in a range of
