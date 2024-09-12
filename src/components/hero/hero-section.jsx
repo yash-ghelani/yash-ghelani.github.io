@@ -16,7 +16,6 @@ const HeroSection = () => {
 					width={200}
 					height={500}
 					alt='memoji'
-					layout
 				/>
 
 				<h1
