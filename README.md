@@ -20,24 +20,6 @@ Welcome to my portfolio website! This site is a showcase of my projects, experie
 - **Optimized for Performance**: Static generation using Next.js ensures fast loading times.
 - **Modern Design**: A clean and minimalistic design inspired by professional portfolios.
 
-## 🖥️ How to Run Locally
-
-If you'd like to run this project locally, follow these steps:
-
-1. Clone the repository:
-```
-git clone https://github.com/yash-ghelani.github.io.git
-```
-2. Install the dependencies:
-```
-npm install
-```
-3. Run the development server:
-```
-npm run dev
-```
-4. Open http://localhost:3000 in your browser to view the site.
-
 ## 🚢 Deployment
 This portfolio is deployed via GitHub Pages. You can visit the live version at:
 
