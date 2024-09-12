@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 
 const SkillsSection = () => {
@@ -111,22 +112,24 @@ const SkillsSection = () => {
 	};
 
 	return (
-		<section className='m-auto max-w-[1280px] p-10 min-h-svh flex flex-col justify-center gap-5'>
-			<h2 className='font-semibold tracking-widest text-5xl opacity-55'>
-				skills
-			</h2>
-			<div className='grid grid-cols-2 lg:grid-cols-4 w-full gap-10'>
-				{skills.skills.map((skill, index) => (
-					<div
-						key={index}
-						className='flex flex-col h-auto bg-white/5 rounded-2xl backdrop-blur-3xl border border-white/10 shadow-md p-6 gap-10 '
-					>
-						{skill.type}
-                        {skill.stack.map((lib, idx) => {
-                            
-                        })}
-					</div>
-				))}
+		<section className='min-h-svh xl:max-w-[1280px] max-w-[600px] w-[80vw] m-auto flex flex-col justify-center'>
+			<div className='flex flex-col gap-10 m-auto w-full'>
+				<h2 className='font-semibold tracking-widest text-clamp-xl opacity-55'>
+					skills
+				</h2>
+				<div className='grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 w-full gap-10'>
+					{skills.skills.map((skill, index) => (
+						<div
+							key={index}
+							className='flex flex-col h-auto bg-white/5 rounded-2xl backdrop-blur-3xl border border-white/10 shadow-md p-6 '
+						>
+							<h1 className='text-clamp-base mb-3'>{skill.type}</h1>
+							{skill.stack.map((lib, idx) => (
+								<p className='text-clamp-xs font-thin' key={idx}>{lib}</p>
+							))}
+						</div>
+					))}
+				</div>
 			</div>
 		</section>
 	);
