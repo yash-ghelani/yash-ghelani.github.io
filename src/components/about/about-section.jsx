@@ -21,28 +21,23 @@ const AboutSection = () => {
 				<div className='flex xl:flex-row flex-col xl:justify-between gap-20'>
 					<div className='xl:text-clamp-base text-clamp-sm font-thin flex flex-col gap-[2em] max-w-[600px] max-h-[500px] xl:w-[40%] w-full'>
 						<p>
-							Hey! I’m Yash, a Software Engineer based in London.
-							I’ve had the opportunity to work in a range of
-							industries, from pharma to streaming. This diverse
-							experience has given me a unique perspective and a
-							toolkit to tackle all sorts of tech challenges.
+							Hey! I’m Yash, a Full Stack Software Engineer based
+							in London. Currently building performant and
+							engaging UI for Peacock TV, dabbling in cross
+							platform apps in my spare time, and travelling as
+							much as possible.
 						</p>
 						<p>
-							I created this website to showcase my experience,
-							skills, and various technical projects. It’s my
-							little corner of the internet to share what I do and
-							love.
+							I created this website to showcase my skills,
+							projects and photography. It’s my little corner of
+							the internet to share what I do.
 						</p>
 						<p>
 							When I’m not coding, you can find me on the
-							badminton court, in the gym, or playing chess. These
-							hobbies keep me balanced and always learning, both
-							physically and mentally.
-						</p>
-						<p>
-							Feel free to explore my portfolio and get in touch
-							if you’d like to collaborate or just chat about
-							tech! 💻 🚀
+							badminton court, in the gym, or playing chess. Feel
+							free to explore my portfolio and get in touch if
+							you’d like to collaborate or just chat about tech!
+							💻 🚀
 						</p>
 					</div>
 					<div className='xl:w-[40%]'>
@@ -51,46 +46,46 @@ const AboutSection = () => {
 							grabCursor={true}
 							loop={true}
 							modules={[EffectCards]}
-							className='mySwiper max-w-[500px] xl:w-[100%] w-[80%]'
+							className='mySwiper max-w-[400px] xl:w-[100%] w-[80%]'
 						>
 							<SwiperSlide>
 								<Image
 									src={'/images/polaroid00.png'}
 									alt={'polaroid of chess in new york'}
-									width={500}
-									height={500}
+									width={400}
+									height={400}
 								/>
 							</SwiperSlide>
 							<SwiperSlide>
 								<Image
 									src={'/images/polaroid0.png'}
 									alt={'polaroid of monkeys in india'}
-									width={500}
-									height={500}
+									width={400}
+									height={400}
 								/>
 							</SwiperSlide>
 							<SwiperSlide>
 								<Image
 									src={'/images/polaroid1.png'}
 									alt={'polaroid of the O2'}
-									width={500}
-									height={500}
+									width={400}
+									height={400}
 								/>
 							</SwiperSlide>
 							<SwiperSlide>
 								<Image
 									src={'/images/polaroid2.png'}
 									alt={'polaroid of the yamuna ghat'}
-									width={500}
-									height={500}
+									width={400}
+									height={400}
 								/>
 							</SwiperSlide>
 							<SwiperSlide>
 								<Image
 									src={'/images/polaroid3.png'}
 									alt={'polaroid in a wigwam cafe'}
-									width={500}
-									height={500}
+									width={400}
+									height={400}
 								/>
 							</SwiperSlide>
 						</Swiper>
