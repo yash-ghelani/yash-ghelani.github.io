@@ -1,0 +1,29 @@
+/* Aura.css */
+.aura-wrapper {
+  position: absolute;
+  z-index: -1;
+  transition: opacity 3000ms ease-in-out 500ms;
+}
+
+.aura-visible {
+  opacity: 1;
+}
+
+.aura-hidden {
+  opacity: 0;
+}
+
+.aura-shape {
+  border-radius: 100%;
+  filter: blur(300px);
+  transition: transform 1000ms ease-out;
+  width: 75vh;
+  height: 75vh;
+}
+
+@media (min-width: 768px) {
+  .aura-shape {
+    width: 100vh;
+    height: 100vh;
+  }
+}

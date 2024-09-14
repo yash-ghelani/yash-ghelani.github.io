@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { useIntersectionObserver } from '@uidotdev/usehooks';
+import './aura.css'; // Import the CSS file
 
 export const COLORS = {
 	Pink: 'bg-pink-500',
@@ -24,7 +25,7 @@ export const POSITIONS = {
 const Aura = ({ color = COLORS.Pink, position = POSITIONS.TopLeft }) => {
 	const [offset, setOffset] = useState({ x: 0, y: 0 });
 	const [ref, entry] = useIntersectionObserver({
-		threshold: 0.05,
+		threshold: 0.05, // Trigger the fade-in when 10% of the aura is visible
 	});
 	const isVisible = entry?.isIntersecting;
 
@@ -32,7 +33,6 @@ const Aura = ({ color = COLORS.Pink, position = POSITIONS.TopLeft }) => {
 	useEffect(() => {
 		const handleMouseMove = (e) => {
 			const { innerWidth, innerHeight } = window;
-
 			const moveDistance = innerHeight / 3;
 
 			// Mouse-based movement offset
@@ -60,15 +60,15 @@ const Aura = ({ color = COLORS.Pink, position = POSITIONS.TopLeft }) => {
 	return (
 		<div
 			ref={ref}
-			className={`absolute z-[-1] ${position} transition-opacity duration-[3000ms] delay-500 ease-in-out opacity-65 ${
-				isVisible ? 'opacity-65' : 'opacity-65'
-			}`}
+			className={`aura-wrapper ${position} ${
+				isVisible ? 'aura-visible' : 'aura-hidden'
+			}`} // Outer div handles fade-in/fade-out (opacity)
 		>
 			<div
+				className={`aura-shape ${color}`} // Inner div handles shape, color, and blur effect
 				style={{
-					transform: `translate(${offset.x}px, ${offset.y}px)`,
+					transform: `translate(${offset.x}px, ${offset.y}px)`, // Dynamic mouse movement
 				}}
-				className={`md:w-[100vh] md:h-[100vh] w-[75vh] h-[75vh] ${color} rounded-full filter blur-[300px] transition-transform ease-out duration-[1000ms]`}
 			/>
 		</div>
 	);
