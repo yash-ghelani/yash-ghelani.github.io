@@ -1,6 +1,7 @@
 'use client'; // Ensure this is a client component
 
 import React, { useState, useEffect } from 'react';
+import { useIntersectionObserver } from '@uidotdev/usehooks';
 
 export const COLORS = {
 	Pink: 'bg-pink-500',
@@ -12,24 +13,33 @@ export const COLORS = {
 };
 
 export const POSITIONS = {
-	TopLeft: '-left-1/4 top-1/3',
-	MidLeft: '-left-1/4 top-1/2 transform -translate-y-1/2',
-	BottomLeft: '-left-1/4 bottom-1/3',
-	TopRight: '-right-1/4 top-1/3',
-	MidRight: '-right-1/4 top-1/2 transform -translate-y-1/2',
-	BottomRight: '-right-1/4 bottom-1/3',
+	TopLeft: 'left-1/2 top-1/3',
+	MidLeft: 'left-1/2 top-1/2 transform -translate-y-1/2',
+	BottomLeft: 'left-1/2 bottom-1/3',
+	TopRight: 'right-1/2 top-1/3',
+	MidRight: 'right-1/2 top-1/2 transform -translate-y-1/2',
+	BottomRight: 'right-1/2 bottom-1/3',
 };
 
 const Aura = ({ color = COLORS.Pink, position = POSITIONS.TopLeft }) => {
 	const [offset, setOffset] = useState({ x: 0, y: 0 });
+	const [ref, entry] = useIntersectionObserver({
+		threshold: 0.1, // Trigger the fade-in when 10% of the aura is visible
+	});
+	const isVisible = entry?.isIntersecting;
 
+	// Mouse movement effect
 	useEffect(() => {
 		const handleMouseMove = (e) => {
 			const { innerWidth, innerHeight } = window;
 
+			const moveDistance = innerHeight / 3;
+
 			// Mouse-based movement offset
-			const mouseX = (e.clientX / innerWidth) * 500 - 250; // Centering at 0
-			const mouseY = (e.clientY / innerHeight) * 500 - 250; // Centering at 0
+			const mouseX =
+				(e.clientX / innerWidth) * moveDistance - moveDistance / 2;
+			const mouseY =
+				(e.clientY / innerHeight) * moveDistance - moveDistance / 2;
 
 			// Set mouse movement offset
 			setOffset({
@@ -49,12 +59,18 @@ const Aura = ({ color = COLORS.Pink, position = POSITIONS.TopLeft }) => {
 
 	return (
 		<div
-			className={`absolute ${position} md:w-[100vh] md:h-[100vh] w-[75vh] h-[75vh] ${color} opacity-75 rounded-full filter blur-[300px] z-[-1]`}
-			style={{
-				transform: `translate(${offset.x}px, ${offset.y}px)`,
-				transition: 'transform 0.65s ease-out', // Smooth movement for mouse following
-			}}
-		/>
+			ref={ref}
+			className={`absolute  z-[-1] ${position} transition-opacity duration-[3000ms] delay-500 ease-in-out ${
+				isVisible ? 'opacity-100' : 'opacity-0'
+			}`} // Outer div handles fade-in/fade-out (opacity)
+		>
+			<div
+				style={{
+					transform: `translate(${offset.x}px, ${offset.y}px)`, // Handle dynamic movement in inline styles
+				}}
+				className={`md:w-[100vh] md:h-[100vh] w-[75vh] h-[75vh] ${color} rounded-full filter blur-[300px] transition-transform ease-out duration-[1000ms]`} // Inner div handles movement (transform)
+			/>
+		</div>
 	);
 };
 
