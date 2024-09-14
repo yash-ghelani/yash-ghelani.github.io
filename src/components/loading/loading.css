@@ -1,0 +1,22 @@
+/* components/Loading.css */
+.loading-text {
+	display: flex;
+	gap: 0.2rem;
+}
+
+.initial {
+	font-size: 4rem;
+	font-weight: bold;
+	color: white;
+	animation: blinkOpacity 6s infinite ease-in-out;
+}
+
+/* Opacity blink effect */
+@keyframes blinkOpacity {
+	0%, 50% {
+		opacity: 1;
+	}
+	25%, 75%, 100% {
+		opacity: 0;
+	}
+}

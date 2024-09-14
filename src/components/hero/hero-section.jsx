@@ -1,14 +1,26 @@
 'use client';
 
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { outift, fira } from '@/app/ui/fonts';
 import { TypeAnimation } from 'react-type-animation';
 import Image from 'next/image';
 import IconRow from './icon-row';
 
+import './hero.css';
+
 const HeroSection = () => {
+	const [isVisible, setIsVisible] = useState(false);
+
+	useEffect(() => {
+		setIsVisible(true);
+	}, []);
+
 	return (
-		<section className='flex flex-col min-h-svh w-[70vw] m-auto'>
+		<section
+			className={`flex flex-col min-h-svh w-[70vw] m-auto ${
+				isVisible ? 'fade-in' : ''
+			}`}
+		>
 			<div className='flex flex-col justify-center items-center gap-[5vh] m-auto'>
 				<Image
 					src={'/images/memoji-edit.png'}
@@ -23,13 +35,13 @@ const HeroSection = () => {
 					style={{
 						color: '#ffffff',
 						textShadow: `
-							0 0 5px rgba(236, 72, 153, 0.35),   /* Pink glow */
-							0 0 10px rgba(236, 72, 153, 0.35),  /* Pink glow */
-							0 0 15px rgba(236, 72, 153, 0.35),  /* Pink glow */
-							0 0 20px rgba(37, 99, 235, 0.35),   /* Blue glow */
-							0 0 25px rgba(37, 99, 235, 0.35),   /* Blue glow */
-							0 0 30px rgba(37, 99, 235, 0.35)    /* Blue glow */
-						`,
+              0 0 5px rgba(236, 72, 153, 0.35),   /* Pink glow */
+              0 0 10px rgba(236, 72, 153, 0.35),  /* Pink glow */
+              0 0 15px rgba(236, 72, 153, 0.35),  /* Pink glow */
+              0 0 20px rgba(37, 99, 235, 0.35),   /* Blue glow */
+              0 0 25px rgba(37, 99, 235, 0.35),   /* Blue glow */
+              0 0 30px rgba(37, 99, 235, 0.35)    /* Blue glow */
+            `,
 					}}
 				>
 					Yash Ghelani
@@ -39,13 +51,13 @@ const HeroSection = () => {
 					sequence={[
 						'software engineer',
 						4000,
+						'ai & cs graduate',
+						4000,
 						'designer',
 						4000,
 						'mobile developer',
 						4000,
 						'amateur photographer',
-						4000,
-						'traveller',
 						4000,
 					]}
 					wrapper='span'
