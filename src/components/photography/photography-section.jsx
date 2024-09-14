@@ -11,9 +11,9 @@ import 'swiper/css/pagination';
 // import required modules
 import { Autoplay, EffectCoverflow } from 'swiper/modules';
 import Image from 'next/image';
+import Heading from '../general/heading';
 
 const PhotographySection = () => {
-	
 	const polaroids = [
 		'/polaroids/1.png',
 		'/polaroids/2.png',
@@ -60,9 +60,7 @@ const PhotographySection = () => {
 	return (
 		<section className='min-h-svh xl:max-w-[1280px] max-w-[600px] w-[80vw] m-auto flex flex-col justify-center'>
 			<div className='flex flex-col w-full gap-20 m-auto'>
-				<h2 className='font-semibold tracking-widest text-clamp-xl opacity-55'>
-					photography
-				</h2>
+				<Heading>photography</Heading>
 				<Swiper
 					autoplay={{
 						delay: 2500,
@@ -84,10 +82,7 @@ const PhotographySection = () => {
 					className='mySwiper w-full'
 				>
 					{polaroids.map((src, index) => (
-						<SwiperSlide
-							className='max-w-[300px]'
-							key={index}
-						>
+						<SwiperSlide className='max-w-[300px]' key={index}>
 							<Image
 								src={src}
 								alt={'polaroid ' + index}

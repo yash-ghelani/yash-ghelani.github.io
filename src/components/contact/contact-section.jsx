@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import React, { useState } from 'react';
+import Heading from '../general/heading';
 
 const ContactSection = () => {
 	// State for the form fields
@@ -38,9 +39,7 @@ const ContactSection = () => {
 	return (
 		<section className='min-h-svh xl:max-w-[1280px] max-w-[600px] w-[80vw] m-auto flex flex-col justify-center'>
 			<div className='flex flex-col gap-10 m-auto w-full'>
-				<h2 className='font-semibold tracking-widest text-clamp-xl opacity-55'>
-					get in touch
-				</h2>
+				<Heading>get in touch</Heading>
 
 				<div className='flex flex-col xl:flex-row justify-between gap-20'>
 					<form onSubmit={handleSubmit} className='w-full xl:w-1/2'>
@@ -111,7 +110,7 @@ const ContactSection = () => {
 						width={200}
 						height={200}
 						alt='Contact icon - paper plane'
-						className='m-auto'
+						className='m-auto max-w-[50%]'
 					/>
 				</div>
 			</div>

@@ -2,7 +2,7 @@ import React from 'react';
 
 const FooterSection = () => {
 	return (
-		<div className='flex flex-col justify-between items-center w-full gap-7'>
+		<div className='flex flex-col justify-between items-center w-full gap-7 mt-20'>
 			<span className='font-light tracking-widest opacity-55'>
 				Designed & Built by Yash Ghelani.
 			</span>

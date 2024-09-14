@@ -3,6 +3,7 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Image from 'next/image';
+import Heading from '../general/heading';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -15,9 +16,7 @@ const AboutSection = () => {
 		// TODO: Make note of section structure in notion
 		<section className='min-h-svh xl:max-w-[1280px] max-w-[600px] w-[80vw] m-auto flex flex-col justify-center'>
 			<div className='flex flex-col gap-10 m-auto w-full'>
-				<h2 className='font-semibold tracking-widest text-clamp-xl opacity-55'>
-					about me
-				</h2>
+				<Heading>about me</Heading>
 				<div className='flex xl:flex-row flex-col xl:justify-between gap-20'>
 					<div className='xl:text-clamp-base text-clamp-sm font-thin flex flex-col gap-[2em] max-w-[600px] max-h-[500px] xl:w-[40%] w-full'>
 						<p>

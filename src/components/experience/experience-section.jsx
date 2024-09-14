@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import ExperienceCard from './experience-card';
 import EducationCard from './education-card';
+import Heading from '../general/heading';
 
 const ExperienceSection = () => {
 	const experience = {
@@ -97,9 +98,7 @@ const ExperienceSection = () => {
 		<section className='min-h-svh xl:max-w-[1280px] max-w-[600px] w-[80vw] m-auto flex flex-col justify-center'>
 			<div className='flex xl:flex-row flex-col xl:gap-10 m-auto w-full justify-between'>
 				<div className='flex flex-col min-h-svh max-w-[600px] xl:w-[42.5%] w-full justify-center gap-10'>
-					<h2 className='font-semibold tracking-widest text-clamp-xl opacity-55'>
-						education
-					</h2>
+					<Heading>education</Heading>
 					<div className='flex flex-row'>
 						<div className='w-[6px] bg-black/25 translate-x-1/2' />
 						<div className='flex flex-col gap-[1em] w-full'>
@@ -116,9 +115,7 @@ const ExperienceSection = () => {
 					</div>
 				</div>
 				<div className='flex flex-col min-h-svh max-w-[600px] xl:w-[42.5%] w-full justify-center gap-8'>
-					<h2 className='font-semibold tracking-widest text-clamp-xl opacity-55'>
-						experience
-					</h2>
+					<Heading>experience</Heading>
 					<div className='flex flex-row'>
 						<div className='w-[6px] bg-black/25 translate-x-1/2' />
 						<div className='flex flex-col gap-[1em] w-full'>
