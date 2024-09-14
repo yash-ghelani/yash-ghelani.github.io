@@ -24,7 +24,7 @@ export const POSITIONS = {
 const Aura = ({ color = COLORS.Pink, position = POSITIONS.TopLeft }) => {
 	const [offset, setOffset] = useState({ x: 0, y: 0 });
 	const [ref, entry] = useIntersectionObserver({
-		threshold: 0.1, // Trigger the fade-in when 10% of the aura is visible
+		threshold: 0.05,
 	});
 	const isVisible = entry?.isIntersecting;
 
@@ -60,15 +60,15 @@ const Aura = ({ color = COLORS.Pink, position = POSITIONS.TopLeft }) => {
 	return (
 		<div
 			ref={ref}
-			className={`absolute  z-[-1] ${position} transition-opacity duration-[3000ms] delay-500 ease-in-out ${
-				isVisible ? 'opacity-100' : 'opacity-0'
-			}`} // Outer div handles fade-in/fade-out (opacity)
+			className={`absolute z-[-1] ${position} transition-opacity duration-[3000ms] delay-500 ease-in-out opacity-65 ${
+				isVisible ? 'opacity-65' : 'opacity-65'
+			}`}
 		>
 			<div
 				style={{
-					transform: `translate(${offset.x}px, ${offset.y}px)`, // Handle dynamic movement in inline styles
+					transform: `translate(${offset.x}px, ${offset.y}px)`,
 				}}
-				className={`md:w-[100vh] md:h-[100vh] w-[75vh] h-[75vh] ${color} rounded-full filter blur-[300px] transition-transform ease-out duration-[1000ms]`} // Inner div handles movement (transform)
+				className={`md:w-[100vh] md:h-[100vh] w-[75vh] h-[75vh] ${color} rounded-full filter blur-[300px] transition-transform ease-out duration-[1000ms]`}
 			/>
 		</div>
 	);
