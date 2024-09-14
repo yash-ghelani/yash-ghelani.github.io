@@ -17,7 +17,7 @@ export default function Home() {
 		// Simulate a loading delay of 5 seconds
 		const timeout = setTimeout(() => {
 			setIsLoading(false);
-		}, 3000);
+		}, 4000);
 
 		// Cleanup the timeout when the component unmounts
 		return () => clearTimeout(timeout);
