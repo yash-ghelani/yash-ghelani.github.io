@@ -1,0 +1,5 @@
+{
+	"git": {
+		"ignoreBranches": ["gh-pages"]
+	}
+}
