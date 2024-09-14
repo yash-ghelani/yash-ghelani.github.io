@@ -9,7 +9,7 @@ import Heading from '../general/heading';
 import 'swiper/css';
 import 'swiper/css/effect-cards';
 
-import { EffectCards } from 'swiper/modules';
+import { Autoplay, EffectCards } from 'swiper/modules';
 
 const AboutSection = () => {
 	return (
@@ -43,8 +43,13 @@ const AboutSection = () => {
 						<Swiper
 							effect={'cards'}
 							grabCursor={true}
-							loop={true}
-							modules={[EffectCards]}
+							autoplay={{
+								delay: 5000,
+								disableOnInteraction: false,
+							}}
+							rewind={true}
+							speed={1000}
+							modules={[Autoplay, EffectCards]}
 							className='mySwiper max-w-[400px] xl:w-[100%] w-[80%]'
 						>
 							<SwiperSlide>
