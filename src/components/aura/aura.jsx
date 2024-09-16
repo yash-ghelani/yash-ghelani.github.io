@@ -27,7 +27,6 @@ const Aura = ({ color = COLORS.Pink, position = POSITIONS.TopLeft }) => {
 	const [ref, entry] = useIntersectionObserver({
 		threshold: 0.05, // Trigger the fade-in when 10% of the aura is visible
 	});
-	const isVisible = entry?.isIntersecting;
 
 	// Mouse movement effect
 	useEffect(() => {
@@ -61,7 +60,7 @@ const Aura = ({ color = COLORS.Pink, position = POSITIONS.TopLeft }) => {
 		<div
 			ref={ref}
 			className={`aura-wrapper ${position} ${
-				isVisible ? 'aura-visible' : 'aura-hidden'
+				entry?.isIntersecting ? 'aura-visible' : 'aura-hidden'
 			}`} // Outer div handles fade-in/fade-out (opacity)
 		>
 			<div
