@@ -4,7 +4,7 @@ import React from 'react';
 import { useIntersectionObserver } from '@uidotdev/usehooks';
 
 const Heading = ({ children }) => {
-	const [ref, entry] = useIntersectionObserver({ threshold: 0.5 });
+	const [ref, entry] = useIntersectionObserver({ threshold: 0.05 });
 
 	return (
 		<h2
