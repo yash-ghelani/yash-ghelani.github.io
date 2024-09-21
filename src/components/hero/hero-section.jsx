@@ -17,7 +17,7 @@ const HeroSection = () => {
 
 	return (
 		<section
-			className={`flex flex-col min-h-svh w-[70vw] m-auto ${
+			className={`flex flex-col min-h-svh w-[70vw] m-auto opacity-0 ${
 				isVisible ? 'fade-in' : ''
 			}`}
 		>
