@@ -9,9 +9,11 @@ import ProjectCard from './project-card';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
-import { projects } from './projects.json';
+import projectsData from './projects.json';
 
 const ProjectsSection = () => {
+	const { projects } = projectsData; // Destructure projects from the imported data
+
 	return (
 		<section className='min-h-svh xl:max-w-[1280px] max-w-[600px] w-[80vw] m-auto flex flex-col justify-center'>
 			<div className='flex flex-col gap-10 m-auto w-full'>
