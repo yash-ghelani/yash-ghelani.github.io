@@ -8,7 +8,7 @@ import FooterSection from '@/components/footer/footer-section';
 import HeroSection from '@/components/hero/hero-section';
 import Loading from '@/components/loading/loading';
 import PhotographySection from '@/components/photography/photography-section';
-import SkillsSection from '@/components/skills/skills-section';
+import ProjectsSection from '@/components/projects/projects-section';
 
 export default function Home() {
 	const [isLoading, setIsLoading] = useState(true);
@@ -46,7 +46,7 @@ export default function Home() {
 			<section className='relative'>
 				<Aura color={COLORS.Red} position={POSITIONS.BottomRight} />
 				<Aura color={COLORS.Blue} position={POSITIONS.TopRight} />
-				<SkillsSection />
+				<ProjectsSection />
 			</section>
 			<section className='relative'>
 				<Aura color={COLORS.Pink} position={POSITIONS.BottomLeft} />

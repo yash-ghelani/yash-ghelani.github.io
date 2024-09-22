@@ -1,0 +1,125 @@
+{
+    "projects": [
+		{
+			"title": "CRWN",
+			"description": "CRWN is a feature-rich e-commerce application that showcases advanced web development concepts. It incorporates Google authentication for easy user access, Stripe integration for secure payments, and a responsive design for optimal user experience across devices. The project highlights proficiency in state management and third-party API integration.",
+			"images": [
+				"/projects/crwn-1.png",
+				"/projects/crwn-2.png",
+				"/projects/crwn-3.png"
+			],
+			"techStack": [
+				{ "name": "React", "icon": "/icons/react.svg" },
+				{
+					"name": "Styled Components",
+					"icon": "/icons/styled-components.svg"
+				},
+				{ "name": "Firebase", "icon": "/icons/firebase.svg" },
+				{ "name": "Redux", "icon": "/icons/redux.svg" }
+			],
+			"links": [
+				{
+					"text": "GitHub",
+					"url": "https://github.com/yash-ghelani/crwn-clothing"
+				},
+				{
+					"text": "Live Demo",
+					"url": "https://crwn-royal.netlify.app/"
+				}
+			]
+		},
+		{
+			"title": "Personal Portfolio",
+			"description": "This single-page application serves as a digital showcase of my professional journey, personal interests, and technical skills. Designed with a focus on user experience and performance, it leverages the power of React and Next.js for optimal rendering and navigation. The use of Tailwind CSS ensures a responsive and visually appealing layout that adapts seamlessly across various devices and screen sizes.",
+			"images": [
+				"/projects/portfolio-1.png",
+				"/projects/portfolio-2.png",
+				"/projects/portfolio-3.png"
+			],
+			"techStack": [
+				{ "name": "React", "icon": "/icons/react.svg" },
+				{ "name": "Next.js", "icon": "/icons/nextjs.svg" },
+				{ "name": "Tailwind CSS", "icon": "/icons/tailwindcss.svg" }
+			],
+			"links": [
+				{
+					"text": "GitHub",
+					"url": "https://github.com/yash-ghelani/yash-ghelani.github.io"
+				},
+				{ "text": "Live Site", "url": "https://www.yashghelani.xyz/" }
+			]
+		},
+		{
+			"title": "Pomodoro",
+			"description": "Pomodoro is a productivity-focused mobile application designed to help users manage their time effectively using the Pomodoro Technique. It allows users to create and manage tasks, set customizable timers, and track their progress. Built with React Native, this app demonstrates the ability to develop cross-platform mobile solutions with a native feel and optimal performance.",
+			"images": [
+				"/projects/pomodoro-1.png",
+				"/projects/pomodoro-2.png",
+				"/projects/pomodoro-3.png"
+			],
+			"techStack": [
+				{ "name": "React Native", "icon": "/icons/react-native.svg" },
+				{ "name": "CSS Modules", "icon": "/icons/css-modules.svg" }
+			],
+			"links": [
+				{
+					"text": "GitHub",
+					"url": "https://github.com/yash-ghelani/pomodoro"
+				},
+				{
+					"text": "App Store",
+					"url": "https://apps.apple.com/app/pomodoro"
+				},
+				{
+					"text": "Google Play",
+					"url": "https://play.google.com/store/apps/details?id=com.yourusername.pomodoro"
+				}
+			]
+		},
+		{
+			"title": "FoodFinder",
+			"description": "A comprehensive full-stack food ordering platform that offers a seamless experience from user authentication to order fulfillment. Features include user registration, profile management, dynamic item listings, secure Stripe checkout, and real-time order status updates. This project demonstrates a robust implementation of modern web technologies and best practices in full-stack development.",
+			"images": [
+				"/projects/foodfinder-1.png",
+				"/projects/foodfinder-2.png",
+				"/projects/foodfinder-3.png"
+			],
+			"techStack": [
+				{ "name": "React", "icon": "/icons/react.svg" },
+				{ "name": "TypeScript", "icon": "/icons/typescript.svg" },
+				{ "name": "Node.js", "icon": "/icons/nodejs.svg" },
+				{ "name": "MongoDB", "icon": "/icons/mongodb.svg" },
+				{ "name": "Tailwind CSS", "icon": "/icons/tailwindcss.svg" }
+			],
+			"links": [
+				{
+					"text": "GitHub",
+					"url": "https://github.com/yash-ghelani/foodfinder"
+				},
+				{ "text": "Live Demo", "url": "https://foodfinder-demo.com" }
+			]
+		},
+		{
+			"title": "Radhe Designs",
+			"description": "Radhe Designs is a sophisticated full-stack platform tailored for mehndi artists to showcase their work and manage bookings. This project combines a visually stunning portfolio display with practical booking functionality, allowing artists to effortlessly connect with clients. The integration of Firebase provides robust backend support, ensuring secure data management and real-time updates.",
+			"images": [
+				"/projects/radhe-designs-png.jpg",
+				"/projects/radhe-designs-png.jpg",
+				"/projects/radhe-designs-png.jpg"
+			],
+			"techStack": [
+				{ "name": "React", "icon": "/icons/react.svg" },
+				{ "name": "Next.js", "icon": "/icons/nextjs.svg" },
+				{ "name": "Firebase", "icon": "/icons/firebase.svg" },
+				{ "name": "Tailwind CSS", "icon": "/icons/tailwindcss.svg" }
+			],
+			"links": [
+				{
+					"text": "GitHub",
+					"url": "https://github.com/yash-ghelani/radhe-designs"
+				},
+				{ "text": "Live Site", "url": "https://radhe-designs.com" }
+			]
+		}
+	]
+}
