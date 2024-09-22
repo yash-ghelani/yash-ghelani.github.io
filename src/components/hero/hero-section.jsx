@@ -24,9 +24,9 @@ const HeroSection = () => {
 			<div className='flex flex-col justify-center items-center gap-[5vh] m-auto'>
 				<Image
 					src={'/images/memoji-edit.png'}
-					className='m-auto max-w-[200px] w-[50%]'
-					width={200}
-					height={500}
+					className='m-auto max-w-[200px] w-[50%] h-auto'
+					width={1219}
+					height={1686}
 					alt='memoji'
 				/>
 
