@@ -21,7 +21,7 @@
 }
 
 body {
-	color: rgb(var(--foreground-rgb));
+	color: #FFFFFF;
 	background-color: #101331; /* Set your background color */
 }
 
