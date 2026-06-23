@@ -2,12 +2,13 @@
 	"name": "yash-ghelani.github.io",
 	"version": "0.1.0",
 	"private": true,
+	"packageManager": "bun@1.3.6",
 	"scripts": {
 		"dev": "next dev",
 		"build": "next build",
 		"start": "next start",
 		"lint": "next lint",
-		"deploy": "npm run build && gh-pages -d out"
+		"deploy": "next build && gh-pages -d out"
 	},
 	"dependencies": {
 		"@uidotdev/usehooks": "^2.4.1",
