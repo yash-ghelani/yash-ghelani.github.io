@@ -1,0 +1,6 @@
+1:"$Sreact.fragment"
+2:I[97367,["/_next/static/chunks/1d4h-sglyo8ft.js","/_next/static/chunks/14mumt5_n0xhi.js"],"ViewportBoundary"]
+3:I[97367,["/_next/static/chunks/1d4h-sglyo8ft.js","/_next/static/chunks/14mumt5_n0xhi.js"],"MetadataBoundary"]
+4:"$Sreact.suspense"
+5:I[27201,["/_next/static/chunks/1d4h-sglyo8ft.js","/_next/static/chunks/14mumt5_n0xhi.js"],"IconMark"]
+0:{"rsc":["$","$1","h",{"children":[null,["$","$L2",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","div",null,{"hidden":true,"children":["$","$L3",null,{"children":["$","$4",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Yash's Portfolio"}],["$","meta","1",{"name":"description","content":"Personal website - built and designed by Yash Ghelani"}],["$","link","2",{"rel":"shortcut icon","href":"/favicons/favicon-32x32.png"}],["$","link","3",{"rel":"icon","href":"/favicons/favicon.ico"}],["$","link","4",{"rel":"apple-touch-icon","href":"/favicons/apple-touch-icon.png"}],["$","$L5","5",{}]]}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"I2v0yf76jTZzhvbK5T3GR"}
